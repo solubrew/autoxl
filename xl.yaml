@@ -1,0 +1,218 @@
+---
+<(META)>:
+	DOCid:
+	name: TIGR
+	description: >
+		''
+	expirary: {expiration}
+	version: {version}
+	path: {LEXIvrs}
+	outline: {outline}
+	authority: document|this
+	security: sec|lvl2
+	<(WT)>: -32
+'areas':
+	'header':
+		'Styles':
+			'Font':
+				'name': 'Calibri'
+				'size': 12
+				'color': 'FFFFFFFF'
+			'Fill':
+				'fill_type': 'solid'
+				'start_color': 'FF215967'
+				'end_color': 'FF215967'
+			'Border':
+				'left':
+					'border_style': 'thin'
+					'color': 'FF000000'
+				'right':
+					'border_style': 'thin'
+					'color': 'FF000000'
+				'top':
+					'border_style': 'thin'
+					'color': 'FF000000'
+				'bottom':
+					'border_style': 'thin'
+					'color': 'FF000000'
+			'Alignment':
+				'wrapText': True
+			'Number': 'General'
+			'Protection':
+				'locked': False
+				'hidden': False
+	'background':
+		'Styles':
+			'Font':
+				'name': 'Calibri'
+				'size': 12
+				'color': 'FF000000'
+			'Fill':
+				'fill_type': 'solid'
+				'start_color': 'FFC5D9F1'
+				'end_color': 'FFC5D9F1'
+			'Border':
+			'Alignment':
+				'wrapText': True
+			'Number': 'General'
+			'Protection':
+				'locked': False
+				'hidden': False
+	'data':
+		'Styles':
+			'Font':
+				'name': 'Calibri'
+				'size': 12
+				'color': 'FF000000'
+			'Fill':
+				'fill_type': 'solid'
+				'start_color': 'FFFFFFFF'
+				'end_color': 'FFFFFFFF'
+			'Border':
+				'left':
+					'border_style': 'thin'
+					'color': 'FF000000'
+				'right':
+					'border_style': 'thin'
+					'color': 'FF000000'
+				'top':
+					'border_style': 'thin'
+					'color': 'FF000000'
+				'bottom':
+					'border_style': 'thin'
+					'color': 'FF000000'
+			'Alignment':
+				'wrapText': True
+			'Number': 'General'
+			'Protection':
+				'locked': False
+				'hidden': False
+	'border':
+		'Styles':
+			'Font':
+				'name': 'Calibri'
+				'size': 12
+				'color': 'AA000000'
+			'Fill':
+				'fill_type': 'solid'
+				'start_color': 'FF000000'
+				'end_color': 'FF000000'
+			'Border':
+			'Alignment':
+				'wrapText': True
+			'Number': 'General'
+			'Protection':
+				'locked': False
+				'hidden': False
+	'hidden':
+		'Styles':
+			'Font':
+				'name': 'Calibri'
+				'size': 12
+				'color': 'AAFFFFFF'
+			'Fill':
+				'fill_type': 'solid'
+				'start_color': 'FFFFFFFF'
+				'end_color': 'FFFFFFFF'
+			'Border':
+			'Alignment':
+				'wrapText': True
+			'Number': 'General'
+			'Protection':
+				'locked': False
+				'hidden': False
+rules:
+	'rule0':
+		'name': 'GreaterThanCell'
+		'type': 'CellIsRule'
+		'params':
+			'operator': 'greaterThan'
+			'formula': ['{absolute_cell}',]
+			'stopIfTrue': True
+			'fill':
+				'start_color': 'FF0000'
+				'end_color': 'FF0000'
+				'fill_type': 'solid'
+	'rule1':
+		'name': 'LessThanCell'
+		'type': 'CellIsRule'
+		'params':
+			'operator': 'lessThan'
+			'formula': ['{absolute_cell}',]
+			'stopIfTrue': True
+			'fill':
+				'start_color': 'FFFF00'
+				'end_color': 'FFFF00'
+				'fill_type': 'solid'
+	'rule2':
+		'name': 'EqualCell'
+		'type': 'CellIsRule'
+		'params':
+			'operator': 'equal'
+			'formula': ['{absolute_cell}',]
+			'stopIfTrue': True
+			'fill':
+				'start_color': 'FFFFFF'
+				'end_color': 'FFFFFF'
+				'fill_type': 'solid'
+	'rule3':
+		'name': 'BetweenCells'
+		'type': 'CellIsRule'
+		'params':
+			'operator': 'between'
+			'formula': ['{absolute_cell_0}', '{absolute_cell_1}']
+			'stopIfTrue': True
+			'fill':
+				'start_color': 'FFFFFF'
+				'end_color': 'FFFFFF'
+				'fill_type': 'solid'
+	'rule4':
+		'name': 'IsBlank'
+		'type': 'CellIsRule'
+		'params':
+			'operator': 'equal'
+			'formula': ['""']
+			'stopIfTrue': True
+			'fill':
+				'start_color': 'FFFFFF'
+				'end_color': 'FFFFFF'
+				'fill_type': 'solid'
+	'rule5':
+		'name': 'SpecificRow'
+		'type': 'Rule'
+		'params':
+			'type': 'expression'
+			'formula': ['=IF(ROW()={absolute_cell}+1, TRUE, FALSE)',]
+			'stopIfTrue': True
+			'color':
+				'font': 'FFFFFF'
+				'fill': '494529'
+formulas:
+	sumif:
+		fx: >
+			=SUMIF({cr0}:{cr1},{cr2},{cr3}:{cr4})
+	sumifs:
+		fx: >
+			=SUMIFS({cr3}:{cr4},{cr0}:{cr1},{cr2},{cr5}:{cr6},{cr7})
+	if:
+		fx: >
+			=IF({cr0} {condition} {cr1}, {true}, {false})
+	vlookup:
+		fx: >
+			=VLOOKUP()
+	divide:
+		fx: >
+			={cr0}/{cr1}
+	add:
+		fx: >
+			={cr0}+{cr1}
+	subtract:
+		fx: >
+			={cr0}-{cr1}
+	'multiply':
+		'fx': >
+			={cr0}*{cr1}
+	'match':
+		'fx': >
+	'index':
+		'fx': >

@@ -1,0 +1,349 @@
+---  #                                  ||
+'<(META)>':  #                              ||
+  'DOCid':   #                            ||
+  'name': TIGR Capacity Model Generator  #              ||
+  'description': >  #                          ||
+  'expirary': {expiration}  #                    ||
+  'version': {version}  #                      ||
+  'path': {LEXIvrs}  #                        ||
+  'outline': {outline}  #                      ||
+  'authority': document|this  #                    ||
+  'security': sec|lvl2  #                        ||
+  '<(WT)>': -32  #                          ||
+'TMPLTs':
+  'sheets':
+    'Dist':
+      'size':
+        'cols':
+          'A': 19
+          'B': 19
+          'C': 19
+          'D': 32
+        'rows':
+          'all': 15
+      'map':
+        'header':
+          '1':
+            '0': 'PTC'
+            '1': 'PLant'
+            '2': 'Plant Pcs'
+            '3': 'Historical Distribution'
+        'body':
+        'footer':
+      'styles':
+        'background':
+          'style': 'border'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+        'header':
+          'style': 'header'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+        'data':
+          'style': 'data'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+    'PTC':
+      'size':
+        cols0: ['A': 2, 'B': 29, 'C': 19, 'D': 19, 'E': 16,
+              'F': 16, 'G': 16, 'H': 16, 'I': 10, 'J': 16,
+              'K': 11, 'L': 10, 'M': 10, 'N': 2, 'O': 10,
+              'P': 10, 'Q': 10, 'R': 10, 'S': 10, 'T': 10]
+        cols:
+          'A': 2
+          'B': 29
+          'C': 19
+          'D': 19
+          'E': 16
+          'F': 16
+          'G': 18
+          'H': 16
+          'I': 10
+          'J': 16
+          'K': 11
+          'L': 10
+          'M': 10
+          'N': 12
+          'O': 20
+          'P': 28
+        rows:
+          all: 15
+      'map':
+        'header':
+        'body':
+        'footer':
+      'styles':
+        'background':
+          'style': 'border'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+    'ProductMix':
+      'map':
+        'header':
+          '1':
+            '0': 'Production Type Code'
+            '1': 'Plant'
+            '2': 'Pcs Req'
+            '3': 'Hrs Req'
+            '4': 'Good Pcs'
+            '5': 'Good Hrs'
+            '6': 'Total Pcs'
+            '7': 'Total Hrs'
+            '8': 'QLF'
+            '9': 'Avg Monthly (Pcs)'
+            '10': 'Avg Monthly (Hrs)'
+            '11': 'Avg Daily (Pcs)'
+            '12': 'Avg Daily (Hrs)'
+        'body':
+        'footer':
+      'size':
+        cols:
+          'A': 21
+          'B': 16
+          'C': 16
+          'D': 16
+          'E': 16
+          'F': 16
+          'G': 16
+          'H': 16
+          'I': 16
+          'J': 16
+          'K': 16
+          'L': 16
+        rows:
+          all: 15
+      'styles':
+        'background':
+          'style': 'border'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+        'header':
+          'style': 'header'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+        'data':
+          'style': 'data'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+    'QLFRTEs':
+      size:
+        cols:
+        rows:
+          all: 15
+      'map':
+        'header':
+          '1':
+            '0': 'PTC'
+            '1': 'Plant'
+            '2': 'Process Name'
+            '3': 'QLF'
+            '4': 'CT'
+            '5': 'ECT'
+        'body':
+        'footer':
+      'size':
+        cols:
+          'A': 19
+          'B': 18
+          'C': 32
+          'D': 20
+          'E': 20
+          'F': 20
+        rows:
+          all: 15
+      'styles':
+        'background':
+          'style': 'border'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+        'header':
+          'style': 'header'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+        'data':
+          'style': 'data'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+    'CPUpdates':
+      size:
+        cols:
+        rows:
+          all: 15
+      'map':
+        'header':
+          '1':
+            '0': 'PartNumber'
+            '1': 'Route'
+            '2': 'Process Name'
+            '3': 'Current CP Hours'
+            '4': 'SME Suggested CP Hours'
+            '5': 'NA Suggested CP Hours'
+            '6': 'Prev Step'
+        'body':
+        'footer':
+      'size':
+        cols:
+          'A': 32
+          'B': 10
+          'C': 16
+          'D': 20
+          'E': 20
+          'F': 20
+        rows:
+          all: 15
+      'styles':
+        'background':
+          'style': 'border'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+        'header':
+          'style': 'header'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+        'data':
+          'style': 'data'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+  'sectns':
+    'PTC':
+      'styles':
+        'background':
+          'style': 'border'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+        'header':
+          'style': 'header'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+        'data':
+          'style': 'data'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+        'footer':
+          'style': 'header'
+          'range':
+            'minrow': {minrow}
+            'maxrow': {maxrow}
+            'mincol': {mincol}
+            'maxcol': {maxcol}
+          'rules':
+          'alignment':
+      'map':
+        'header':
+          '0':
+            '0': 'Production Type Code'
+            '1': '{ptc}'
+            '2': 'Pieces Required'
+            '3': ={cr00}
+            '5': 'Number of Parts'
+            '6': '{num_parts}'
+          '1':
+            '0': 'Routing Status'
+            '1': '{rte_code}'
+            '5': 'Number of Orders'
+            '6': '{num_orders}'
+          '2':
+            '0': 'Name'
+            '1': 'Plant'
+            '2': 'Rate'
+            '3': 'Required Quantity'
+            '4': 'Run Hours'
+            '5': 'Good Quantity'
+            '6': 'Total Quantity'
+            '7': 'Scrap'
+            '8': 'Scrap %'
+            '9': 'QLF'
+            '10': 'QLF Hours'
+            '11': 'CP Hours'
+            '12': 'Cycle Time'
+            '13': 'Effective Cycle Time'
+            '14': 'Suggested CPHrs per 10k Pcs'
+        'body':
+        'footer':
+          '0':
+            '4': =SUM({cr00}:{cr01})
+            '5': =SUM({cr02}:{cr03})
+            '6': =SUM({cr04}:{cr05})
+            '9': 1
+          '1':
+            '8': 'Total QLF Hours'
+            '9': =SUM({cr06}:{cr07})
+          '2':
+            '8': 'Total CP Hours'
+            '9': =SUM({cr08}:{cr09})
+          '3':
+            '8': 'Unrouted QLF Hours'
+            '9': ={cr10}-{cr11}
+          '4':
+            '8': 'QLF:CP Ratio'
+            '9': =IF(ISERROR({cr12}/{cr13}),0,{cr12}/{cr13})
